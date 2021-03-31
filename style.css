@@ -1,0 +1,134 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.container {
+    background-image: url("opjessica-ruscello-lUtPqjz5D5k-unsplash.jpg");
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;
+}
+
+.block {
+    display: none;
+}
+
+#header {
+    background: url("./christian-holzinger-CUY_YHhCFl4-unsplash.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+#header h3 {
+    font-size: 2.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(230, 209, 20);
+    margin: 2rem;
+}
+
+#header p {
+    font-size: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(241, 9, 9);
+    font-weight: bold;
+    margin: 20px;
+}
+
+#header button {
+    padding: .6rem 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#header button:hover {
+    background-color: rgb(202, 199, 35);
+}
+
+.hidden {
+    display: block;
+}
+
+.track {
+    position: absolute;
+    bottom: 0%;
+}
+
+.track img {
+    width: 200vw;
+    height: 5rem;
+}
+
+.tr {
+    animation: op3 2s linear infinite;
+}
+
+#op1 {
+    position: absolute;
+    top: 24.5rem;
+    /* top: 21.5rem; */
+    left: 10rem;
+}
+
+#op2 {
+    position: absolute;
+    top: 29.3rem;
+    /* left: 40rem; */
+    left: 20rem;
+    height: 60px;
+    width: 50px;
+}
+
+.dancer {
+    animation: op1 3s linear infinite;
+}
+
+@keyframes op1 {
+    0% {
+        left: 110vw;
+    }
+    100% {
+        left: -5vw;
+    }
+}
+
+.succes {
+    animation: op2 2s linear;
+}
+
+@keyframes op2 {
+    0% {
+        top: 20rem;
+    }
+    25% {
+        top: 20rem;
+        left: 12rem;
+    }
+    75% {
+        left: 13rem;
+        top: 25rem;
+    }
+    100% {
+        left: 13rem;
+        top: 25rem;
+    }
+}
+
+@keyframes op3 {
+    100% {
+        transform: translateX(-50vw);
+    }
+}
+
+.score {
+    text-align: center;
+    color: rgb(184, 121, 26);
+    font-size: 2.5rem;
+}
